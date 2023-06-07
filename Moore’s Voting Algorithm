@@ -1,0 +1,14 @@
+//size of the given array:
+    int n = v.size();
+    int cnt = 0; // count
+    int el; // Element
+
+    //applying the algorithm:
+    for (int i = 0; i < n; i++) {
+        if (cnt == 0) {
+            cnt = 1;
+            el = v[i];
+        }
+        else if (el == v[i]) cnt++;
+        else cnt--;
+    }
